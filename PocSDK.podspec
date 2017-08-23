@@ -95,14 +95,14 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.public_header_files = "PocSDK/Protection.h"
-  s.source_files  = "PocSDK/Protection.h"
+  s.public_header_files = "PocSDK/PocSDK.h"
+  s.source_files  = "PocSDK/PocSDK.h"
   # s.exclude_files = "Classes/Exclude"
 
 
 s.subspec "Protection" do |ss|
-    ss.source_files = "PocSDK/*.{h,m}"
-    ss.public_header_files = "PocSDK/*.h"
+    ss.source_files = "PocSDK/Protection/*.{h,m}"
+    ss.public_header_files = "PocSDK/Protection/*.h"
   end
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
