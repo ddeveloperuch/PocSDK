@@ -12,12 +12,12 @@
 
 - (void)startScan
 {
-
+    NSLog(@"Scan was started successfully!");
 }
 
 - (void)stopScan
 {
-    
+    NSLog(@"Scan stopped!");
 }
 
 @end
