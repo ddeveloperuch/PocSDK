@@ -100,6 +100,11 @@ Pod::Spec.new do |s|
   # s.exclude_files = "Classes/Exclude"
 
 
+s.subspec "Protection" do |ss|
+    ss.source_files = "PocSDK/*.{h,m}"
+    ss.public_header_files = "PocSDK/*.h"
+  end
+
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  A list of resources included with the Pod. These are copied into the
