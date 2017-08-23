@@ -84,6 +84,7 @@ Pod::Spec.new do |s|
   #
 
   s.source       = { :git => "https://github.com/griganskiy/PocSDK.git", :tag => "#{s.version}" }
+  s.requires_arc = true
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -94,10 +95,9 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
-
-  # s.public_header_files = "Classes/**/*.h"
+  s.public_header_files = "PocSDK/Protection.h"
+  s.source_files  = "PocSDK/Protection.h"
+  # s.exclude_files = "Classes/Exclude"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
